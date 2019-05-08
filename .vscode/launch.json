@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) with Arguments Prompt - Produce html",
+            "request": "launch",
+            "mainClass": "",
+            "args": "--database-input -t mssql05 -h 10.199.63.205 --port 50577 -d COMORBIDITY -s dbo --driver-path \"C:\\Microsoft JDBC Driver 7.0 for SQL Server\\sqljdbc_7.0\\enu\\mssql-jdbc-7.0.0.jre10.jar\" --html-output --xml-output --target-path \"C:\\New folder\" --graphviz-path \"C:\\Program Files (x86)\\Graphviz2.38\\\""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) with Arguments Prompt - Produce Schema",
+            "request": "launch",
+            "mainClass": "",
+            "args": "--database-input -t mssql05 -h 10.199.63.205 --port 50577 -d COMORBIDITY -s dbo --driver-path \"C:\\Microsoft JDBC Driver 7.0 for SQL Server\\sqljdbc_7.0\\enu\\mssql-jdbc-7.0.0.jre10.jar\" --scm-output --target-path \"C:\\New folder\""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TryDumpXML<SqlHawk>",
+            "request": "launch",
+            "mainClass": "com.martiansoftware.jsap.xml.TryDumpXML",
+            "projectName": "SqlHawk"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TryLoadXML<SqlHawk>",
+            "request": "launch",
+            "mainClass": "com.martiansoftware.jsap.xml.TryLoadXML",
+            "projectName": "SqlHawk"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringUtils<SqlHawk>",
+            "request": "launch",
+            "mainClass": "com.martiansoftware.util.StringUtils",
+            "projectName": "SqlHawk"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<SqlHawk>",
+            "request": "launch",
+            "mainClass": "uk.co.timwise.sqlhawk.console.Main",
+            "projectName": "SqlHawk"
+        }
+    ]
+}
